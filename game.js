@@ -21,7 +21,7 @@ const paddle = {
   y: can.height - paddle_marginb - paddle_h,
   width: paddle_w,
   height: paddle_h,
-  dx: 5,
+  dx: 9,
 };
 
 //drawing paddingLeft
