@@ -9,7 +9,7 @@ const paddle_h = 20;
 let leftArrow = false;
 let rightArrow = false;
 const BALL_RADIUS = 8;
-let life = 3;
+let life = 5;
 let score = 0;
 let LEVEL = 1;
 const MAX_LEVEL = 3;
@@ -61,7 +61,7 @@ const ball = {
   x: can.width / 2,
   y: paddle.y - BALL_RADIUS,
   radius: BALL_RADIUS,
-  speed: 5.5,
+  speed: 5,
   dx: 3 * (Math.random() * 2 - 1),
   dy: -3,
 };
@@ -219,7 +219,7 @@ function levelUp() {
     }
     brick.row++;
     createBricks();
-    ball.speed += 2;
+    ball.speed += 1;
     resetBall();
     LEVEL++;
   }
