@@ -6,30 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
       rel="stylesheet"
     />
-    <title>Breakout game</title>
+    <title>Ball-Game</title>
   </head>
-  <body>
-    <div class="sound">
-      <img src="img/soundon1.png" alt="" id="sound" />
+  <body id="home">
+    <div class="container" width="400px" height="500px">
+      <div class="container-fluid text-center">
+        <h1 class="head1">Breakout</h1>
+        <h2 class="head1">Ball Game!</h2>
+        <a
+          href="index1.html"
+          role="button"
+          class="stbt btn btn-outline-dark btn-lg"
+        >
+          Start
+        </a>
+        <h2>Description:</h2>
+        <ui>
+          <li>Use the Left Arrow and Right Arrow to move the paddle.</li>
+          <li>There are 3 levels in the game.</li>
+          <li>
+            With each level the speed of the ball increases and the number of
+            bricks increases.
+          </li>
+        </ui>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"
+        ></script>
+      </div>
     </div>
-    <div id="gameover">
-      <img src="img/gameover.png" alt="" id="gamelost" />
-      <img src="img/gamewon.png" alt="" id="gamewon" />
-      <div id="restart">Play Again!!</div>
-    </div>
-    <canvas id="breakout" width="400px" height="500px"></canvas>
-    <script src="component.js"></script>
-    <script src="game.js"></script>
   </body>
 </html>

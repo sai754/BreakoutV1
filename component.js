@@ -1,6 +1,6 @@
 //load image
 const bg_img = new Image();
-bg_img.src = "img/bgb1.jpg";
+bg_img.src = "img/bg3.jpg";
 
 const lev_img = new Image();
 lev_img.src = "img/lvlup1.png";
